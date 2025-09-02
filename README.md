@@ -1,34 +1,46 @@
-# Coursera-test
+# Login System
 
-This repository contains sample code.
+A simple login system with a web-based login form.
 
-## User Login
+## Features
 
-`login.py` provides a user login form with a graphical interface using Tkinter.
+- Web-based login form with HTML, CSS, and JavaScript
+- Flask backend for handling authentication
+- Integration with existing login verification logic
+- Session management for logged-in users
+- Responsive design
 
-Features:
-- Required fields: username, password, email
-- Buttons: Login, Cancel
-- Basic input validation
-- Secure password handling with SHA-256 hashing
+## Setup and Installation
 
-Run the script:
+1. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
-```bash
-python3 login.py
+2. Run the application:
+   ```
+   python app.py
+   ```
+
+3. Access the login form at http://localhost:3000
+
+## Default Credentials
+
+- Username: admin
+- Password: password123
+
+## Testing
+
+Run the tests using pytest:
+```
+pytest
 ```
 
-Default credentials:
-- username: `admin`
-- password: `password123`
-- email: `admin@example.com` (only for demonstration, not checked during login)
+## Implementation Details
 
-## Tests
-
-Run tests with `pytest`:
-
-```bash
-pip install pytest
-python3 -m pytest
-```
+- The login form is implemented as a responsive HTML page with CSS styling
+- Client-side validation ensures required fields are filled
+- Server-side authentication uses the existing SHA-256 hashing mechanism
+- Flask sessions maintain user login state
+- RESTful API endpoint for login authentication
 
